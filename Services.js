@@ -29,7 +29,7 @@ async function getToken() {
 }
 
 // Function to send SMS
-async function sendSms(mobile) {
+async function sendSms(mobile, name) {
     const token = await getToken();
     if (!token) {
         console.error('❌ Token not found, SMS sending aborted.');
@@ -39,10 +39,11 @@ async function sendSms(mobile) {
     const smsData = {
         ParameterArray: [
             { Parameter: "EstateCode", ParameterValue: "" },
-            { Parameter: "referID", ParameterValue: "" }
+            { Parameter: "referID", ParameterValue: "" },
+            { Parameter: "name", ParameterValue: name }
         ],
         Mobile: mobile,
-        TemplateId: "83678"
+        TemplateId: "83742"
     };
 
     try {

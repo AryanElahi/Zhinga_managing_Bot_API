@@ -34,7 +34,7 @@ app.post('/send', async (req, res) => {
         console.log("✅ User registered successfully:", userResult.data);
 
         // Send SMS
-        const smsResult = await sendSms(phone);
+        const smsResult = await sendSms(phone, name);
         if (!smsResult) {
             console.error("❌ Failed to send SMS.");
             return res.status(500).json({ error: "Failed to send SMS." });
