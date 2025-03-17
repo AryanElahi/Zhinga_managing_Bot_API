@@ -43,7 +43,7 @@ async function sendSms(mobile, name) {
             { Parameter: "name", ParameterValue: name }
         ],
         Mobile: mobile,
-        TemplateId: "83742"
+        TemplateId: "83743"
     };
 
     try {
