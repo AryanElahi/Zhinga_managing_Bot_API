@@ -1,5 +1,7 @@
 # SMS Business Card Bot (Node.js + PostgreSQL)
 
+This Telegram bot helps real estate agents efficiently share digital business cards via SMS. It provides a simple chat interface where users can submit their contact details (name, birth date, and phone number) which are then automatically sent as SMS business cards. The bot also offers functionality to retrieve all submitted contacts, making it easy to manage client information. Built with Node.js, it uses a state management system to guide users through the submission process and integrates with external SMS APIs for message delivery, providing a complete solution for professional contact sharing.
+
 ## 📌 Features
 - Send real estate business cards via SMS (1-click)
 - Manage contacts in PostgreSQL
