@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 // bot token
-const token = "7937475104:AAEfEu7Ol_G8XfBrh_Wy3WWIBewVlW3lqAA";
+const token = "";
 const bot = new TelegramBot(token, { polling: true });
 
 // save user status
